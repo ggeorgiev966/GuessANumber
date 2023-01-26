@@ -28,9 +28,9 @@ def new_game_1():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
@@ -68,9 +68,9 @@ def new_game_1h():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
@@ -134,9 +134,9 @@ def new_game_2h():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
@@ -200,9 +200,9 @@ def new_game_3h():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
@@ -230,9 +230,9 @@ def new_game_3h():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
@@ -265,9 +265,9 @@ def new_game_2():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
@@ -304,9 +304,9 @@ def new_game_3():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
