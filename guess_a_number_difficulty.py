@@ -340,12 +340,12 @@ def game_start():
         game_difficulty = input(Fore.BLUE + "Game Difficulty: ")
         while game_difficulty not in valid_game_difficulty:
             print(Fore.RED + "Invalid input. Choose again!")
-            game_mode = input(Fore.BLUE + "Game Mode: ")
-            if game_difficulty in valid_game_modes:
+            game_difficulty = input(Fore.BLUE + "Difficulty: ")
+            if game_difficulty in valid_game_difficulty:
                 break
         if game_difficulty == "1":
             return new_game_1()
-        elif game_mode == "2":
+        elif game_difficulty == "2":
             return new_game_2()
         else:
             return new_game_3()
@@ -357,8 +357,8 @@ def game_start():
         game_difficulty = input(Fore.BLUE + "Game Difficulty: ")
         while game_difficulty not in valid_game_difficulty:
             print(Fore.RED + "Invalid input. Choose again!")
-            game_difficulty = input(Fore.BLUE + "Game Mode: ")
-            if game_difficulty in valid_game_modes:
+            game_difficulty = input(Fore.BLUE + "Game Difficulty: ")
+            if game_difficulty in valid_game_difficulty:
                 break
         if game_difficulty == "1":
             return new_game_1h()
