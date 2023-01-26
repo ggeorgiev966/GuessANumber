@@ -88,6 +88,7 @@ def new_game_1h():
             print(Fore.RED + f"You have {10 - player_number_counter} tries left!")
         if player_number_counter == 10:
             print(Fore.RED + f"You lose!")
+            print(Fore.RED + f"The number was {computer_number}!")
             while True:
                 print(Fore.RESET + "Would you like to play again? (Y/N):")
                 play_again_response = input()
@@ -98,9 +99,9 @@ def new_game_1h():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
@@ -154,6 +155,7 @@ def new_game_2h():
             print(Fore.RED + f"You have {11 - player_number_counter} tries left!")
         if player_number_counter == 11:
             print(Fore.RED + f"You lose!")
+            print(Fore.RED + f"The number was {computer_number}!")
             while True:
                 print(Fore.RESET + "Would you like to play again? (Y/N):")
                 play_again_response = input()
@@ -164,9 +166,9 @@ def new_game_2h():
                 elif play_again_response.lower() in decline:
                     print("Would you like to return to the start menu? (Y/N):")
                     player_menu_response = input()
-                    if player_menu_response in accept:
+                    if player_menu_response.lower() in accept:
                         return game_start()
-                    elif player_menu_response in decline:
+                    elif player_menu_response.lower() in decline:
                         return SystemExit
                     else:
                         print(Fore.RED + "Invalid input. Try again!")
@@ -220,6 +222,7 @@ def new_game_3h():
             print(Fore.RED + f"You have {12 - player_number_counter} tries left!")
         if player_number_counter == 12:
             print(Fore.RED + f"You lose!")
+            print(Fore.RED + f"The number was {computer_number}!")
             while True:
                 print(Fore.RESET + "Would you like to play again? (Y/N):")
                 play_again_response = input()
